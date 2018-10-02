@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 describe 'conference_badges' do
 
@@ -101,8 +102,11 @@ TEXT
         # is checking to see whether or not your terminal screen receives the correct
         # printed output.
         expect($stdout).to receive(:puts).with(line.chomp)
+        
       end
+      # binding.pry
       printer(attendees)
+      
     end
 
   end
