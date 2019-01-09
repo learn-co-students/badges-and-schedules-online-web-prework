@@ -28,24 +28,3 @@ def printer(attendees)
     puts result
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
