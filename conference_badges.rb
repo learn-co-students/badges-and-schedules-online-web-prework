@@ -1,1 +1,2 @@
-# Write your code here.
+badge_maker("Clark")
+=> "Hello, my name is Clark"
