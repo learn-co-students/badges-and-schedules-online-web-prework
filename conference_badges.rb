@@ -1,5 +1,3 @@
-require'pry'
-
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end 
@@ -22,9 +20,7 @@ def printer(names_array)
   assign_rooms(names_array).each do |item, index|
     puts item
   end
-end 
-  
-
+end
 
 
   
