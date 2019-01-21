@@ -10,7 +10,13 @@ def batch_badge_creator(attendees)
 end
 end 
 
-
+def assign_rooms
+attendees.map do |attendee|
+attendees.map do |room_assignments|
+"Hello, #{attendee}! You'll be assigned to #{room_assignments}!"
+end
+end 
+end
 =begin
 
 def batch_badge_creator(attendees)
@@ -26,7 +32,7 @@ end
 fruits.each do |fruit|
   puts "A fruit of type: #{fruit}"
 =end
-
   # batch_badge_creator(array) 
 #  returns array
+
 #end    
