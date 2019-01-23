@@ -8,42 +8,29 @@ def batch_badge_creator(attendees)
  attendees.map do |attendee|
   "Hello, my name is #{attendee}."
 end
-end 
+end
 
-def assign_rooms(attendee)
-#room_assignments = 1...7
-attendee.each do |cycle|
-#room_assignments.each do |number|
-  puts "Hello, #{attendee}! You'll be assigned to room #{number}!"
-#room_assignments += 1
+def assign_rooms(attendees) 
+room_assignments = []
+attendees.each_with_index do |name, index| 
+room_assignments.push("Hello, #{name}\! You'll be assigned to room #{index +1}\!") 
+end 
+room_assignments
+end
+
+def printer(attendees)
+    batch_badge_creator(attendees).each do |badge| 
+    puts badge
+    end
+  assign_rooms(attendees).each do |room|
+    puts room
+    end
+end 
+#puts x would nil
+#???
+#What is the theory behind solving the  problem this way? What are the nouns/verbs used and which other ways could this be executed/accomplished?
+
+#def assign_rooms(attendees)
+#attendees.each_with_index {|attendee, index| puts "Hello, #{attendee}\! You'll be assigned to room #{index}\!"}
 #end
-end 
-end
 
-=begin
-
-each_with_index do |item, index|
-puts " Hi #{item}! You are assigned to room #{room}"
-room +=1
-end
-
-
-def batch_badge_creator(attendees)
-  attendees.map do |attendee|
-    "Hello, my name is #{attendee}."
-  end
-end
-
-
-
-#{|e| puts "Hello, my name is {e}" }
-
-fruits.each do |fruit|
-  puts "A fruit of type: #{fruit}"
-end
-  # batch_badge_creator(array) 
-#  returns array
-
-#end    
-
-=end
