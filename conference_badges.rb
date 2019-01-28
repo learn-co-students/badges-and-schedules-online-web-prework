@@ -9,8 +9,9 @@ def batch_badge_creator(attendees_arr)
   attendees_arr.each { |i|
     greet_arr << badge_maker(i)
   }
-  return greet_arr
+  greet_arr
 end
+
 
 def assign_rooms(attendees_arr)
   rooms_arr = []
@@ -28,4 +29,13 @@ def printer(attendees_arr)
     puts badges_arr[i]
     puts rooms_arr[i]
   end
+end
+
+
+def printer(attendees_arr)
+  badges_arr = batch_badge_creator(attendees_arr)
+  rooms_arr = assign_rooms(attendees_arr)
+  badges_arr.each {|i| puts i}
+  rooms_arr.each {|i| puts i}
+
 end
