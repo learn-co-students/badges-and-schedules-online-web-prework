@@ -18,5 +18,8 @@ end
 def printer(attendees_array)
   badges = batch_badge_creator(attendees_array)
   rooms_assigned = assign_rooms(attendees_array)
-  puts 'BADGES_AND_ROOMS', <<badges, <<rooms_assigned
+  badges_and_rooms_assigned = badges.concat(rooms_assigned)
+  badges_and_rooms_assigned.each do |x|
+    puts x
+  end
 end 
