@@ -16,3 +16,14 @@ def batch_badge_creator(attendees)
  badge_name
  
 end
+
+def assign_rooms(attendees)
+  welcome_room = []
+  
+  attendees.each do |attendee|
+    
+    
+  end
+  
+
+end
