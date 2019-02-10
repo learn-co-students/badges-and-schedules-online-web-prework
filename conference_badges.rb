@@ -20,10 +20,12 @@ end
 def assign_rooms(attendees)
   welcome_room = []
   
-  attendees.each do |attendee|
-    
-    
-  end
   
-
+  attendees.each_with_index do |attendee, index| 
+    
+    welcome_room.push("Hello, #{attendee}! You'll be assigned to room #{index}")
+    end
+  
+  welcome_room
+  
 end
