@@ -5,26 +5,26 @@ def badge_maker(name)
    "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(attendee)
+def batch_badge_creator(attendees)
   attendees.map do |attendee|
-    "Hello, my name is #{attendee}."
+    "Hello, my name is #{attendees}."
   end
 end
 
-def assign_rooms(attendee)
+def assign_rooms(attendees)
   "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
-  attendee.each_with_index.map do |attendee, index|
+  attendees.each_with_index.map do |attendee, index|
   end
 end
 
-def printer(attendee)
-  batch_badge_creator(attendee).each do {|badge|}
+def printer(attendees)
+  batch_badge_creator(attendees).each do {|badge|}
     puts badge
   end
 end
 
-  def assign_rooms(attendee)
-    assign_rooms(attendee).each do |assignment|
+  def assign_rooms(attendees)
+    assign_rooms(attendees).each do |assignment|
     puts assignment
   end
 end
