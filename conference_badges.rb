@@ -16,9 +16,7 @@ def assign_rooms(array)
     return room_assignments
 end
 
-def printer (array)
-  badges_and_room_assignments = []
-  array.each do |speakers, room_assignments|
-    badges_and_room_assignments << puts "#{speakers}, #{room_assignments}"}
-    return badges_and_room_assignments
-  end
+def printer (attendees)
+   batch_badge_creator(attendees).each {|badge| puts badge}
+   assign_rooms(attendees).each {|assignment| puts assignment}
+end
