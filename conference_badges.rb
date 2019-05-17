@@ -3,10 +3,10 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  for each do |x|
-    puts badge_maker(array[x])
+  array.each do |x|
+    puts badge_maker(x)
   end
 end
 
 def assign_rooms(array)
-  
+end
