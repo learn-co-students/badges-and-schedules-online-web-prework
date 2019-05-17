@@ -3,9 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  array.each do |x|
-    puts badge_maker(x)
-  end
+  array.collect {|x| "Hello my name is #{x}"}
 end
 
 def assign_rooms(array)
