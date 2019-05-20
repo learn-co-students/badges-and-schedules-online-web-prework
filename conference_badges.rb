@@ -1,4 +1,5 @@
 # Write your code here.
+require 'pry'
 
 def badge_maker(name)
   "Hello, my name is #{name}."
@@ -17,13 +18,13 @@ def batch_badge_creator(array)
   newArr
 end 
 
-
+#refactored removed counter var
 def assign_rooms(speaker)
-counter = 0
+
 newArr = []
-speaker.each do |x|
-newArr << "Hello, #{x}! You'll be assigned to room #{counter + 1}!"
-  counter+= 1
+speaker.each_with_index do |name, index|
+  newArr << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+  #binding .pry
 end 
 newArr
 end 
