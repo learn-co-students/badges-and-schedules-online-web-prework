@@ -18,7 +18,7 @@ def batch_badge_creator(array)
   newArr
 end 
 
-#refactored removed counter var and used collect with offset index
+#refactored removed counter var and used collect with offset index with 1
 def assign_rooms(speaker)
 speaker.collect.with_index(1) do |name, index|
    "Hello, #{name}! You'll be assigned to room #{index}!"
